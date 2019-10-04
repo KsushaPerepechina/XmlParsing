@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/banks"
+        xmlns:tns="http://www.example.com/banks"
+        elementFormDefault="qualified">
+
+    <element name="banks">
+        <complexType>
+            <sequence>
+                <element name="bank"
+                         type="tns:Bank"
+                         minOccurs="0"
+                         maxOccurs="unbounded" />
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="Bank">
+        <sequence>
+            <element name="deposit"
+                     type="tns:Deposit"
+                     minOccurs="0"
+                     maxOccurs="unbounded" />
+        </sequence>
+        <attribute name="name" type="tns:Bank-Name" use="required" />
+        <attribute name="country" type="tns:Country" default="USA"/>
+    </complexType>
+
+    <complexType name="Deposit">
+        <all>
+            <element name="depositor-name" type="tns:Depositor-Name" />
+            <element name="amount" type="tns:Amount" />
+            <element name="type" type="tns:Deposit-Type" />
+            <element name="currency" type="tns:Currency" />
+            <element name="profitability" type="tns:Profitability" />
+            <element name="time-constraint" type="tns:Time-Constraint" />
+            <element name="start-date" type="date" />
+        </all>
+        <attribute name="account-id" type="tns:Account-Id" use="required" />
+    </complexType>
+
+    <simpleType name="Bank-Name">
+        <restriction base="ID">
+            <pattern value="[A-z\s]{3,20}"/>
+        </restriction>
+
+    </simpleType>
+
+    <simpleType name="Country">
+        <restriction base="string">
+            <enumeration value="USA"/>
+            <enumeration value="Canada"/>
+            <enumeration value="Germany"/>
+            <enumeration value="France"/>
+            <enumeration value="UK"/>
+            <enumeration value="Japan"/>
+            <enumeration value="Switzerland"/>
+            <enumeration value="China"/>
+            <enumeration value="Russia"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Account-Id">
+        <restriction base="ID">
+            <pattern value="[A-Z]{2}\d{2}[A-Z]{4}\d{20}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Depositor-Name">
+        <restriction base="string">
+            <pattern value="[A-Z]['.\-A-z\s]{2,19}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Amount">
+        <restriction base="double">
+            <pattern value="\d+([.,]\d{1,2})?"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Deposit-Type">
+        <restriction base="string">
+            <enumeration value="demand"/>
+            <enumeration value="urgent"/>
+            <enumeration value="settlement"/>
+            <enumeration value="savings"/>
+            <enumeration value="metal"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Currency">
+        <restriction base="string">
+            <enumeration value="USD"/>
+            <enumeration value="EUR"/>
+            <enumeration value="GBP"/>
+            <enumeration value="JPY"/>
+            <enumeration value="CHF"/>
+            <enumeration value="CNY"/>
+            <enumeration value="RUB"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Profitability">
+        <restriction base="double">
+            <pattern value="\d+([.,]\d{1,2})?"/>
+        </restriction>
+
+    </simpleType>
+
+    <complexType name="Time-Constraint">
+        <sequence>
+            <element name="years-number" type="positiveInteger" />
+            <element name="month-number" type="positiveInteger" />
+        </sequence>
+    </complexType>
+
+</schema>

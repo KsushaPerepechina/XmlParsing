@@ -1,0 +1,18 @@
+<banks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.example.com/banks"
+          xsi:schemaLocation="http://www.example.com/banks banks.xsd">
+    <bank name ="PNC" country="Canada">
+        <deposit account-id="US84TNSL06709108137902387984">
+            <depositor-name>James Arthur Gosling</depositor-name>
+            <amount>1000000000</amount>
+            <type>savings</type>
+            <currency>USD</currency>
+            <profitability>2.3</profitability>
+            <time-constraint>
+                <years-number>1</years-number>
+                <month-number>6</month-number>
+            </time-constraint>
+            <start-date>2019-10-01</start-date>
+        </deposit>
+    </bank>
+</banks>
