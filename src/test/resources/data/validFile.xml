@@ -1,0 +1,211 @@
+<deposits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.example.com/deposits"
+          xsi:schemaLocation="http://www.example.com/deposits deposits.xsd">
+    <deposit account-id="CA84TNSL06709108137902387984" bank-name ="PNC" country="Canada">
+        <depositor-name>James Arthur Gosling</depositor-name>
+        <amount>1000000</amount>
+        <type>savings</type>
+        <currency>USD</currency>
+        <profitability>2.3</profitability>
+        <time-constraint>
+            <years-number>1</years-number>
+            <months-number>6</months-number>
+        </time-constraint>
+        <start-date>2019-10-01</start-date>
+    </deposit>
+
+    <deposit account-id="US39QNND67340942987485863807" bank-name="Bank of America">
+        <depositor-name>Maryl Brown</depositor-name>
+        <amount>5000000</amount>
+        <type>demand</type>
+        <currency>USD</currency>
+        <profitability>0.56</profitability>
+        <time-constraint>
+            <years-number>1</years-number>
+            <months-number>3</months-number>
+        </time-constraint>
+        <start-date>2018-12-10</start-date>
+    </deposit>
+
+    <deposit account-id="SW76PWNG94572924738754023298" bank-name="Swiss National Bank" country="Switzerland">
+        <depositor-name>Mark Elliot Zuckerberg</depositor-name>
+        <amount>1500000</amount>
+        <type>demand</type>
+        <currency>CHF</currency>
+        <profitability>1.2</profitability>
+        <time-constraint>
+            <years-number>2</years-number>
+            <months-number>8</months-number>
+        </time-constraint>
+        <start-date>2018-09-23</start-date>
+    </deposit>
+
+    <deposit account-id="SC82JSDS78623901904832042084" bank-name="Royal Bank of Scotland" country="UK">
+        <depositor-name>John Campbell</depositor-name>
+        <amount>30000000</amount>
+        <type>settlement</type>
+        <currency>GBP</currency>
+        <profitability>3.5</profitability>
+        <time-constraint>
+            <years-number>10</years-number>
+            <months-number>6</months-number>
+        </time-constraint>
+        <start-date>2015-03-17</start-date>
+    </deposit>
+
+    <deposit account-id="FR98DHKC48787687201009919308" bank-name="BPCE" country="France">
+        <depositor-name>Jean Reno</depositor-name>
+        <amount>1000000</amount>
+        <type>urgent</type>
+        <currency>EUR</currency>
+        <profitability>4.7</profitability>
+        <time-constraint>
+            <years-number>3</years-number>
+            <months-number>2</months-number>
+        </time-constraint>
+        <start-date>2016-03-23</start-date>
+    </deposit>
+
+    <deposit account-id="CH10BDJB67099173198438845018" bank-name="Industrial &amp; Commercial Bank of China" country="China">
+        <depositor-name>John Woo</depositor-name>
+        <amount>1000000</amount>
+        <type>metal</type>
+        <currency>CNY</currency>
+        <profitability>1.68</profitability>
+        <time-constraint>
+            <years-number>1</years-number>
+            <months-number>3</months-number>
+        </time-constraint>
+        <start-date>2019-10-10</start-date>
+    </deposit>
+
+    <deposit account-id="FR55SDBS43658374275836983740" bank-name="Mizuho Bank" country="Japan">
+        <depositor-name>Jake E Lee</depositor-name>
+        <amount>1000000</amount>
+        <type>demand</type>
+        <currency>JPY</currency>
+        <profitability>5.2</profitability>
+        <time-constraint>
+            <years-number>5</years-number>
+            <months-number>6</months-number>
+        </time-constraint>
+        <start-date>2016-07-19</start-date>
+    </deposit>
+
+    <deposit account-id="DE87QOLB48579827371198639869" bank-name="Commerzbank" country="Germany">
+        <depositor-name>Karl Otto Lagerfeld</depositor-name>
+        <amount>1000000000</amount>
+        <type>savings</type>
+        <currency>EUR</currency>
+        <profitability>5</profitability>
+        <time-constraint>
+            <years-number>9</years-number>
+            <months-number>6</months-number>
+        </time-constraint>
+        <start-date>2009-02-20</start-date>
+    </deposit>
+
+    <deposit account-id="RU82DJQT67457274284938758765" bank-name="PJSC Sberbank" country="Russia">
+        <depositor-name>Vladimir Vishnevski</depositor-name>
+        <amount>1000000</amount>
+        <type>urgent</type>
+        <currency>RUB</currency>
+        <profitability>2.3</profitability>
+        <time-constraint>
+            <years-number>1</years-number>
+            <months-number>6</months-number>
+        </time-constraint>
+        <start-date>2019-02-05</start-date>
+    </deposit>
+
+    <deposit account-id="US38HKDT78364827846376365765" bank-name="PNC">
+        <depositor-name>Kseniya Perepechina</depositor-name>
+        <amount>1000</amount>
+        <type>settlement</type>
+        <currency>USD</currency>
+        <profitability>3.8</profitability>
+        <time-constraint>
+            <years-number>5</years-number>
+            <months-number>1</months-number>
+        </time-constraint>
+        <start-date>2018-07-21</start-date>
+    </deposit>
+
+    <deposit account-id="CA84TNSL06709998187746289209" bank-name ="Bank of Montreal" country="Canada">
+        <depositor-name>Arthur McAdams</depositor-name>
+        <amount>1000000</amount>
+        <type>savings</type>
+        <currency>USD</currency>
+        <profitability>2.3</profitability>
+        <time-constraint>
+            <years-number>1</years-number>
+            <months-number>6</months-number>
+        </time-constraint>
+        <start-date>2019-10-01</start-date>
+    </deposit>
+
+    <deposit account-id="US39QNND67340093289576102807" bank-name="Bank of America">
+        <depositor-name>Rachel Perry</depositor-name>
+        <amount>5000000</amount>
+        <type>demand</type>
+        <currency>USD</currency>
+        <profitability>0.56</profitability>
+        <time-constraint>
+            <years-number>1</years-number>
+            <months-number>3</months-number>
+        </time-constraint>
+        <start-date>2018-12-10</start-date>
+    </deposit>
+
+    <deposit account-id="US76PWNG94572736462535897698" bank-name="Wells Fargo">
+        <depositor-name>Matthew David McConaughey</depositor-name>
+        <amount>1500000</amount>
+        <type>demand</type>
+        <currency>CHF</currency>
+        <profitability>1.2</profitability>
+        <time-constraint>
+            <years-number>2</years-number>
+            <months-number>8</months-number>
+        </time-constraint>
+        <start-date>2018-09-23</start-date>
+    </deposit>
+
+    <deposit account-id="SC82JSDS78623872040949287784" bank-name="Barclays Bank" country="UK">
+        <depositor-name>Robert Peter Williams</depositor-name>
+        <amount>450000</amount>
+        <type>settlement</type>
+        <currency>GBP</currency>
+        <profitability>3.5</profitability>
+        <time-constraint>
+            <years-number>10</years-number>
+            <months-number>6</months-number>
+        </time-constraint>
+        <start-date>2015-03-17</start-date>
+    </deposit>
+
+    <deposit account-id="FR98DHKC48787687201009399308" bank-name="BPCE" country="France">
+        <depositor-name>Luc Besson</depositor-name>
+        <amount>1000000</amount>
+        <type>urgent</type>
+        <currency>EUR</currency>
+        <profitability>4.7</profitability>
+        <time-constraint>
+            <years-number>3</years-number>
+            <months-number>2</months-number>
+        </time-constraint>
+        <start-date>2016-03-23</start-date>
+    </deposit>
+
+    <deposit account-id="CH10BDJB67032173198438845018" bank-name="Industrial &amp; Commercial Bank of China" country="China">
+        <depositor-name>Yan Choo</depositor-name>
+        <amount>1000000</amount>
+        <type>metal</type>
+        <currency>CNY</currency>
+        <profitability>1.68</profitability>
+        <time-constraint>
+            <years-number>1</years-number>
+            <months-number>3</months-number>
+        </time-constraint>
+        <start-date>2019-10-10</start-date>
+    </deposit>
+</deposits>

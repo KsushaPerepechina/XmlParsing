@@ -1,30 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
-        targetNamespace="http://www.example.com/banks"
-        xmlns:tns="http://www.example.com/banks"
+        targetNamespace="http://www.example.com/deposits"
+        xmlns:tns="http://www.example.com/deposits"
         elementFormDefault="qualified">
 
-    <element name="banks">
+    <element name="deposits">
         <complexType>
             <sequence>
-                <element name="bank"
-                         type="tns:Bank"
+                <element name="deposit"
+                         type="tns:Deposit"
                          minOccurs="0"
                          maxOccurs="unbounded" />
             </sequence>
         </complexType>
     </element>
-
-    <complexType name="Bank">
-        <sequence>
-            <element name="deposit"
-                     type="tns:Deposit"
-                     minOccurs="0"
-                     maxOccurs="unbounded" />
-        </sequence>
-        <attribute name="name" type="tns:Bank-Name" use="required" />
-        <attribute name="country" type="tns:Country" default="USA"/>
-    </complexType>
 
     <complexType name="Deposit">
         <all>
@@ -37,11 +26,14 @@
             <element name="start-date" type="date" />
         </all>
         <attribute name="account-id" type="tns:Account-Id" use="required" />
+        <attribute name="bank-name" type="tns:Bank-Name" use="required" />
+        <attribute name="country" type="tns:Country" default="USA"/>
     </complexType>
 
     <simpleType name="Bank-Name">
-        <restriction base="ID">
-            <pattern value="[A-z\s]{3,20}"/>
+        <restriction base="string">
+            <pattern value="[A-z\&amp;\-\u0020]{3,30}"/>
+            <!-- \u0020 - space character unicode escape -->
         </restriction>
 
     </simpleType>
@@ -68,7 +60,7 @@
 
     <simpleType name="Depositor-Name">
         <restriction base="string">
-            <pattern value="[A-Z]['.\-A-z\s]{2,19}"/>
+            <pattern value="[A-Z]['.\-A-z\u0020]{2,30}"/>
         </restriction>
     </simpleType>
 
@@ -104,13 +96,12 @@
         <restriction base="double">
             <pattern value="\d+([.,]\d{1,2})?"/>
         </restriction>
-
     </simpleType>
 
     <complexType name="Time-Constraint">
         <sequence>
             <element name="years-number" type="positiveInteger" />
-            <element name="month-number" type="positiveInteger" />
+            <element name="months-number" type="positiveInteger" />
         </sequence>
     </complexType>
 

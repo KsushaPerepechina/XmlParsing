@@ -1,0 +1,12 @@
+<deposits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.example.com/deposits"
+          xsi:schemaLocation="http://www.example.com/deposits deposits.xsd" >
+    <deposit account-id="CA84TNSL06709108137902387984" bank-name ="PNC" country="Canada">
+        <depositor-name>James Arthur Gosling</depositor-name>
+        <amount>1000000</amount>
+        <type>savings</type>
+        <currency>USD</currency>
+        <profitability>2.3</profitability>
+        <start-date>2019-10-01</start-date>
+    </deposit>
+</deposits>

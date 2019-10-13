@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Demo Suite">
+
+    <test name="Dom parser test">
+        <classes>
+            <class name="by.epam.xmlparsing.parser.DomDepositParserTest"/>
+        </classes>
+    </test>
+
+    <test name="Sax parser test">
+        <classes>
+            <class name="by.epam.xmlparsing.parser.SaxDepositParserTest"/>
+        </classes>
+    </test>
+
+    <test name="Jaxb parser test">
+        <classes>
+            <class name="by.epam.xmlparsing.parser.StaxDepositParserTest"/>
+        </classes>
+    </test>
+</suite>
